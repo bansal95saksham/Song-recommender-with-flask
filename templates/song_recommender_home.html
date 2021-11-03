@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Spotify Song Recommender System</title>
+    </head>
+    <body>
+        <h3>Spotify Song Recommender System</h3>
+        <a href='/'>Home</a>
+        &emsp;
+        <a href='/song_recommender_home'>Refresh inputs</a>
+        <br>
+        <p>__Please mind the data-types and donot leave any input field blank__</p>
+        <form action='/song_recommender_result' method='post'>
+            acousticness : <input type='text' name='acousticness'/> range : float_(0,1)
+            <br><br>
+            danceability : <input type='text' name='danceability'/> range : float_(0,1)
+            <br><br>
+            duration_ms : <input type='text' name='duration_ms'/> range : int_(60000,600000)
+            <br><br>
+            energy : <input type='text' name='energy'/> range : float_(0,1)
+            <br><br>
+            explicit : <input type='text' name='explicit'/> range : int_(0,1)
+            <br><br>
+            instrumentalness : <input type='text' name='instrumentalness'/> range : float_(0,1)
+            <br><br>
+            key : <input type='text' name='key'/> range : int_(0,11)
+            <br><br>
+            liveness : <input type='text' name='liveness'/> range : float_(0,1)
+            <br><br>
+            loudness : <input type='text' name='loudness'/> range : float_(-60,5)
+            <br><br>
+            mode : <input type='text' name='mode'/> range : int_(0,1)
+            <br><br>
+            popularity : <input type='text' name='popularity'/> range : int_(0,100)
+            <br><br>
+            speechiness : <input type='text' name='speechiness'/> range : float_(0,1)
+            <br><br>
+            tempo : <input type='text' name='tempo'/> range : float_(0,250)
+            <br><br>
+            valence : <input type='text' name='valence'/> range : float_(0,1)
+            <br><br>
+            year : <input type='text' name='year'/> range : int_(1920,2021)
+            <br><br>
+            <input type='submit' value='Recommend'/>
+        </form>
+    </body>
+</html>

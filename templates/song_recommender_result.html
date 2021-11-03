@@ -1,0 +1,15 @@
+<html>
+    <head><title>Song recommender result</title></head>
+    <body>
+        <a href='/'>Home</a>
+        &emsp;
+        <a href='/song_recommender_home'>Song Recommender</a>
+        <br>
+        <h3>Recommended songs list :</h3>
+        <ul>
+            {% for i in recom_songs %}
+            <li>{{i}}</li>
+            {% endfor %}
+        </ul>   
+    </body>
+</html>
